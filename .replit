@@ -1,2 +1,10 @@
+run = "open index.html"
 [nix]
 channel = "stable-24_05"
+
+[[ports]]
+localPort = 80
+externalPort = 80
+
+[deployment]
+run = ["sh", "-c", "open index.html"]
